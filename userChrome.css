@@ -30,6 +30,25 @@
 .tabbrowser-tab[beforeselected-visible]{ border-image: none !important; }
 
 
+/* --- GENERAL DEBLOAT ---------------------------------- */
+
+/* Bottom left page loading status or url preview */
+#statuspanel { display: none !important; }
+
+/* remove radius from right-click popup */
+menupopup, panel { --panel-border-radius: 0px !important; }
+menu, menuitem, menucaption { border-radius: 0px !important; }
+
+/* no stupid large buttons in right-click menu */
+menupopup > #context-navigation { display: none !important; }
+menupopup > #context-sep-navigation { display: none !important; }
+
+
+/* --- STYLE NAVBAR ------------------------------------ */
+
+/* remove padding between toolbar buttons */
+toolbar .toolbarbutton-1 { padding: 0 0 !important; }
+
 
 
 /* --- UNIFIED EXTENSIONS BUTTON ------------------------ */
@@ -85,5 +104,18 @@
 /* remove container indicator from urlbar */
 #userContext-label, #userContext-indicator { display: none !important;}
 
+/* --- STYLE TAB TOOLBAR -------------------------------- */
 
+#titlebar {
+	--proton-tab-block-margin: 0px !important;
+	--tab-block-margin: 0px !important;
+}
+
+#TabsToolbar, .tabbrowser-tab {
+	max-height: var(--tab-min-height) !important;
+	font-size: 11px !important;
+}
+
+/* hide window controls */
+.titlebar-buttonbox-container { display: none; }
 
