@@ -119,3 +119,4 @@ toolbar .toolbarbutton-1 { padding: 0 0 !important; }
 /* hide window controls */
 .titlebar-buttonbox-container { display: none; }
 
+#star-button-box { display: none !important; }
